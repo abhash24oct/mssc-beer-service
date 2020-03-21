@@ -1,5 +1,6 @@
 package abhash.springframework.web.model;
 
+import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -17,8 +18,8 @@ public class BeerDto {
 	private String beerName;
 	private BeerStyleEnum beerStyle;
 	private String upc;
-	private int quantityOnHand;
-	private long price;
+	private Integer quantityOnHand;
+	private BigDecimal price;
 	
 	private UUID uuid;
 	private Long version;
