@@ -1,4 +1,4 @@
-package abhash.springframework.web.service;
+package abhash.springframework.service;
 
 import java.util.UUID;
 

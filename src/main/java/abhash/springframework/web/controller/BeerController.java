@@ -12,22 +12,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import abhash.springframework.service.BeerService;
 import abhash.springframework.web.model.BeerDto;
-import abhash.springframework.web.service.BeerService;
 
 @RestController
 @RequestMapping("/api/v1/beer")
 public class BeerController {
 	
-	private BeerService beerService;
+	private final BeerService beerService;
 
 	public BeerController(BeerService beerService) {
 		this.beerService = beerService;
 	}
 	
-	@GetMapping
+	@GetMapping("/{beerId}")
 	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId){
-		
 		
 		BeerDto beerDto = beerService.getBeerId(beerId);
 		return new ResponseEntity<>(HttpStatus.OK);
@@ -39,17 +38,17 @@ public class BeerController {
 		return new ResponseEntity<BeerDto>(HttpStatus.CREATED);
 	}
 	
-	@PutMapping
+	@PutMapping("/{beerId}")
 	public ResponseEntity<BeerDto> updateBeer(@PathVariable("beerId") UUID beerId){
 		
 		BeerDto updatedBeer = beerService.updateBeer(beerId);
 		return new ResponseEntity<BeerDto>(HttpStatus.NO_CONTENT);
 	}
 	
-	@GetMapping
+	/*@GetMapping
 	public ResponseEntity<BeerDto> getBeerByUpcCode(@PathVariable("upc") int upc){
 		BeerDto beerDto = beerService.getBeerByUpc(upc);
 		return new ResponseEntity<BeerDto>(beerDto,HttpStatus.OK);
-	}
+	}*/
 	
 }
