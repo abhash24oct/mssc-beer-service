@@ -21,7 +21,7 @@ public class BeerDto {
 	private long price;
 	
 	private UUID uuid;
-	private int version;
+	private Long version;
 	
 	private OffsetDateTime createdDate;
 	private OffsetDateTime lastModifiedDate;
