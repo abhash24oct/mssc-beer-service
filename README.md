@@ -13,4 +13,7 @@ We used CommandLineRunner to load the beer initialy
 Extension of ` CrudRepository` to provide additional methods to retrieve entities using the pagination and
  sorting abstraction.
 
- 
+ ### @ControllerAdvice
+` @ControllerAdvice` is used when we have to define a genric class for exception handling
+
+
