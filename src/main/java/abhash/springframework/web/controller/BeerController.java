@@ -21,29 +21,29 @@ import abhash.springframework.web.model.BeerDto;
 @RequestMapping("/api/v1/beer")
 public class BeerController {
 	
-	private final BeerService beerService;
+	//private final BeerService beerService;
 
-	public BeerController(BeerService beerService) {
-		this.beerService = beerService;
-	}
+//	public BeerController(BeerService beerService) {
+//		this.beerService = beerService;
+//	}
 	
 	@GetMapping("/{beerId}")
 	public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId){
 		
-		BeerDto beerDto = beerService.getBeerId(beerId);
+	//	BeerDto beerDto = beerService.getBeerId(beerId);
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 	
 	@PostMapping
 	public ResponseEntity<BeerDto> saveBeer(@Valid @RequestBody BeerDto beerDto){
-		BeerDto savedBeer = beerService.saveBeer(beerDto);
+	///	BeerDto savedBeer = beerService.saveBeer(beerDto);
 		return new ResponseEntity<BeerDto>(HttpStatus.CREATED);
 	}
 	
 	@PutMapping("/{beerId}")
 	public ResponseEntity<BeerDto> updateBeer(@PathVariable("beerId") UUID beerId,@Valid BeerDto beerDto){
 		
-		BeerDto updatedBeer = beerService.updateBeer(beerId);
+	//	BeerDto updatedBeer = beerService.updateBeer(beerId);
 		return new ResponseEntity<BeerDto>(HttpStatus.NO_CONTENT);
 	}
 	
