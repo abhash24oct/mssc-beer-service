@@ -6,6 +6,7 @@ install: true
 script: 
   - mvn clean install
   - mvn test -B
+  - mvn cobertura:cobertura
   - bash <(curl -s https://codecov.io/bash)
 
 
