@@ -5,8 +5,8 @@ jdk:
 install: true
 script: 
   - mvn clean install
-  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - mvn test -B
+  - bash <(curl -s https://codecov.io/bash)
 
 
 cache:
