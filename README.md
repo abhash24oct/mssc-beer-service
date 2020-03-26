@@ -1,4 +1,7 @@
-w# Beer Microservice
+[![Build Status](https://travis-ci.com/abhash24oct/mssc-beer-service.svg?branch=master)](https://travis-ci.com/abhash24oct/mssc-beer-service)
+[![Code Coverage](https://codecov.io/github/joaomlneto/travis-ci-tutorial-java/coverage.svg)](https://codecov.io/gh/joaomlneto/travis-ci-tutorial-java)
+
+# Beer Microservice
 SFG Beer Works - Beer Microservice
 
 
