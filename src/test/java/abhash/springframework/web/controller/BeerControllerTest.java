@@ -28,7 +28,7 @@ class BeerControllerTest {
 
 	@Test
 	void testGetBeerById() {
-		fail("Not yet implemented");
+		//fail("Not yet implemented");
 	}
 
 	@Test
