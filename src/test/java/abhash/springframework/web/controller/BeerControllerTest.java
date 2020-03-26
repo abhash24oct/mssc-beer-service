@@ -19,6 +19,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import abhash.springframework.web.model.BeerDto;
 import abhash.springframework.web.model.BeerStyleEnum;
 
+
 @WebMvcTest(BeerController.class)
 class BeerControllerTest {
 
@@ -47,7 +48,7 @@ class BeerControllerTest {
 
 	@Test
 	void updateBeerById() throws Exception {
-		
+
 		BeerDto beerDto = getValidBeerDto();
 		String beerDtoJson = objectMapper.writeValueAsString(beerDto);
 		System.out.println(beerDtoJson);

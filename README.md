@@ -19,4 +19,7 @@ Extension of ` CrudRepository` to provide additional methods to retrieve entitie
  ### @ControllerAdvice
 ` @ControllerAdvice` is used when we have to define a genric class for exception handling
 
+###Cofiguring Restdocs
+
+Addd ` @ExtendWith(RestDocumentationExtension.class) and @AutoConfigureRestDocs ` to your test class 
 

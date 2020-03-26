@@ -1,0 +1,16 @@
+abhash\springframework\web\model\BeerDto.class
+abhash\springframework\web\model\BeerPagedList.class
+abhash\springframework\domain\Beer.class
+abhash\springframework\repository\BeerRepository.class
+abhash\springframework\web\mapper\BeerMapperImpl.class
+abhash\springframework\service\BeerServiceImpl.class
+abhash\springframework\web\mapper\DateMapper.class
+abhash\springframework\bootstrap\BeerLoader.class
+abhash\springframework\web\model\BeerStyleEnum.class
+abhash\springframework\service\BeerService.class
+abhash\springframework\web\controller\BeerController.class
+abhash\springframework\MsscBeerServiceApplication.class
+abhash\springframework\web\model\BeerDto$BeerDtoBuilder.class
+abhash\springframework\web\controller\MvcExceptionHandler.class
+abhash\springframework\web\mapper\BeerMapper.class
+abhash\springframework\domain\Beer$BeerBuilder.class
