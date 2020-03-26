@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import abhash.springframework.service.BeerService;
@@ -41,7 +42,8 @@ public class BeerController {
 	}
 	
 	@PutMapping("/{beerId}")
-	public ResponseEntity<BeerDto> updateBeer(@PathVariable("beerId") UUID beerId,@Valid BeerDto beerDto){
+	public ResponseEntity<BeerDto> updateBeer(@PathVariable("beerId") UUID beerId,@Valid @RequestBody BeerDto beerDto){
+		
 		
 	//	BeerDto updatedBeer = beerService.updateBeer(beerId);
 		return new ResponseEntity<BeerDto>(HttpStatus.NO_CONTENT);
