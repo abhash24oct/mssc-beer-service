@@ -8,7 +8,7 @@ public interface BeerService {
 
 	BeerDto getBeerId(UUID beerId);
 
-	BeerDto updateBeer(UUID beerId);
+	BeerDto updateBeer(UUID beerId,BeerDto beerDto);
 
 	BeerDto saveBeer(BeerDto beerDto);
 
