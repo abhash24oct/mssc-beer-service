@@ -61,8 +61,6 @@ class BeerControllerTest {
 
 		BeerDto beerDto = getValidBeerDto();
 		String beerDtoJson = objectMapper.writeValueAsString(beerDto);
-		System.out.println(beerDtoJson);
-
 		given(beerService.updateBeer(any(),any())).willReturn(getValidBeerDto());
 		mockMvc.perform(put("/api/v1/beer/" + UUID.randomUUID().toString()).contentType(MediaType.APPLICATION_JSON)
 				.content(beerDtoJson)).andExpect(status().isNoContent());
