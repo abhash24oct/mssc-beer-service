@@ -8,6 +8,7 @@ D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\repos
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\mapper\DateMapper.java
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\mapper\BeerMapper.java
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\service\BeerServiceImpl.java
+D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\controller\NotFoundException.java
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\controller\MvcExceptionHandler.java
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\model\BeerPagedList.java
 D:\Spring-workspace\mssc-beer-service\src\main\java\abhash\springframework\web\model\BeerStyleEnum.java

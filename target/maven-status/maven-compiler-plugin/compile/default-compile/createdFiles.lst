@@ -5,6 +5,7 @@ abhash\springframework\repository\BeerRepository.class
 abhash\springframework\web\mapper\BeerMapperImpl.class
 abhash\springframework\service\BeerServiceImpl.class
 abhash\springframework\web\mapper\DateMapper.class
+abhash\springframework\web\controller\NotFoundException.class
 abhash\springframework\bootstrap\BeerLoader.class
 abhash\springframework\web\model\BeerStyleEnum.class
 abhash\springframework\service\BeerService.class
